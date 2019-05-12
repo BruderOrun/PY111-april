@@ -1,32 +1,57 @@
-def zero():
-    return "zero"
-def one():
-    return "one"
-def two():
-    return "two"
-switcher = {
-        0: zero,
-        1: one,
-        2: two
-    }
-def numbers_to_strings(argument):
-    # Get the function from switcher dictionary
-    func = switcher.get(argument, "nothing")
-    # Execute the function
-    return func()
 
-print(numbers_to_strings(2))
+f = '/home/bruder/PycharmProjects/PY111-april/Lib_book/the_added_books/1ри мушкетера_Александр Дюма_1985 — копия.txt'
 
+def read(f):
 
+    with open(f, "r") as myfile:
+        for line in myfile.readlines():
+            print(line)
+read(f)
+# def y_b():
+#     vb = input('Введите (y,n)')
+#     a = input('Введите данные для фильтрации')
+#     return vb, a
+#
+# y_b()[1]
+#
+# y_b()[1]
+# lst = ['1Ври мушкетера_Александр Дюма_1985 — копия.txt']
+# a = input('aaa')
+# def fil(lstt, a):
+#     filt = list(filter(lambda x: a in x, lstt))
+#     return filt
+#
+# print(fil(lst, a))
 
-def switch_case(case):
-    return  {
-    '1' : "vi",
-    '2' : "vi_0",
-    '3' : "t_f_t()"
-    }.get(case, "an out of range number")
-
-print(switch_case(str(2)))
+# def zero():
+#     return "zero"
+# def one():
+#     return "one"
+# def two():
+#     return "two"
+# switcher = {
+#         0: zero,
+#         1: one,
+#         2: two
+#     }
+# def numbers_to_strings(argument):
+#     # Get the function from switcher dictionary
+#     func = switcher.get(argument, "nothing")
+#     # Execute the function
+#     return func()
+#
+# print(numbers_to_strings(2))
+#
+#
+#
+# def switch_case(case):
+#     return  {
+#     '1' : "vi",
+#     '2' : "vi_0",
+#     '3' : "t_f_t()"
+#     }.get(case, "an out of range number")
+#
+# print(switch_case(str(2)))
 # book = "Три мушкетера_Александр Дюма_2017.txt"
 # def pars_name(book):
 #     a = book.split('_')
